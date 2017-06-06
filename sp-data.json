@@ -1,0 +1,30 @@
+{
+    "config": {
+        "appkey": "abbd8q8owvnrcack7rudzjavo3kwc6",
+        "userkey": "uetedvmp9i7c61yerw4rcbvw3d9tqj"
+    },
+    "device": [
+        {
+            "args": {
+                "priority": 0,
+                "sound": "intermission",
+                "title": "Device Check"
+            },
+            "hostname": "127.0.0.1",
+            "isConnected": "no",
+            "name": "fergpi",
+            "port": 12740
+        },
+        {
+            "args": {
+                "priority": 0,
+                "sound": "intermission",
+                "title": "Device Check"
+            },
+            "hostname": "127.0.0.1",
+            "isConnected": "no",
+            "name": "churchpi",
+            "port": 12741
+        }
+    ]
+}
