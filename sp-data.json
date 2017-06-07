@@ -1,7 +1,7 @@
 {
     "config": {
-        "appkey": "abbd8q8owvnrcack7rudzjavo3kwc6",
-        "userkey": "uetedvmp9i7c61yerw4rcbvw3d9tqj"
+        "appkey": "yourkeyhere",
+        "userkey": "yourkeyhere"
     },
     "device": [
         {
@@ -12,7 +12,7 @@
             },
             "hostname": "127.0.0.1",
             "isConnected": "no",
-            "name": "fergpi",
+            "name": "device1",
             "port": 12740
         },
         {
@@ -23,7 +23,7 @@
             },
             "hostname": "127.0.0.1",
             "isConnected": "no",
-            "name": "churchpi",
+            "name": "device2",
             "port": 12741
         }
     ]
