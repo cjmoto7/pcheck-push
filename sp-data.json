@@ -5,7 +5,12 @@
     },
     "device": [
         {
-            "args": {
+            "argsOn": {
+                "priority": 0,
+                "sound": "intermission",
+                "title": "Device Check"
+            },
+            "argsOff": {
                 "priority": 0,
                 "sound": "intermission",
                 "title": "Device Check"
@@ -16,7 +21,12 @@
             "port": 12740
         },
         {
-            "args": {
+            "argsOn": {
+                "priority": 0,
+                "sound": "intermission",
+                "title": "Device Check"
+            },
+            "argsOff": {
                 "priority": 0,
                 "sound": "intermission",
                 "title": "Device Check"
