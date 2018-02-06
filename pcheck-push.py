@@ -32,20 +32,20 @@ def send_push_notif(message, args):
         raise r.raise_for_status()
 
 
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 for index, device in enumerate(settings['device']):
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     try:
         s.connect((device['hostname'], device['port']))
         if device['isConnected'] == 'no':
             settings['device'][index]['isConnected'] = 'yes'
-            if settings['device'][index]['onlineNotify'] = 'yes'
+            if device['onlineNotify'] == 'yes':
                 send_push_notif(device['name'] + ' is now online', device['argsOn'])
     except socket.error:
         if device['isConnected'] == 'yes':
             settings['device'][index]['isConnected'] = 'no'
-            if settings['device'][index]['offlineNotify'] = 'yes'
+            if device['offlineNotify'] == 'yes':
                 send_push_notif(device['name'] + ' is now offline', device['argsOff'])
-s.close()
+    s.close()
 
 with open('sp-data.json', 'w') as outfile:
     json.dump(settings, outfile, sort_keys=True, indent=4, separators=(',', ': '))
