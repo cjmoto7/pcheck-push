@@ -38,11 +38,13 @@ for index, device in enumerate(settings['device']):
         s.connect((device['hostname'], device['port']))
         if device['isConnected'] == 'no':
             settings['device'][index]['isConnected'] = 'yes'
-            send_push_notif(device['name'] + ' is now online', device['argsOn'])
+            if settings['device'][index]['onlineNotify'] = 'yes'
+                send_push_notif(device['name'] + ' is now online', device['argsOn'])
     except socket.error:
         if device['isConnected'] == 'yes':
             settings['device'][index]['isConnected'] = 'no'
-            send_push_notif(device['name'] + ' is now offline', device['argsOff'])
+            if settings['device'][index]['offlineNotify'] = 'yes'
+                send_push_notif(device['name'] + ' is now offline', device['argsOff'])
 s.close()
 
 with open('sp-data.json', 'w') as outfile:

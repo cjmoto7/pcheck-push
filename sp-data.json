@@ -18,7 +18,9 @@
             "hostname": "127.0.0.1",
             "isConnected": "no",
             "name": "device1",
-            "port": 12740
+            "port": 10000,
+            "offlineNotify": "no",
+            "onlineNotify": "yes"
         },
         {
             "argsOn": {
@@ -34,7 +36,9 @@
             "hostname": "127.0.0.1",
             "isConnected": "no",
             "name": "device2",
-            "port": 12741
+            "port": 10001,
+            "offlineNotify": "no",
+            "onlineNotify": "yes"
         }
     ]
 }
